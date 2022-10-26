@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Призывник №{{ data.Prizivnik.id }}{% endblock %}
+
+{% block content %}
+    <div>Фамилия: {{ data.Prizivnik.surname }}</div>
+    <div>Имя: {{ data.Prizivnik.name }}</div>
+    <div>Отчество: {{ data.Prizivnik.patronymic }}</div>
+    <div>Возраст: {{ data.Prizivnik.vozrast }}</div>
+    <div>Категория: {{ data.Prizivnik.categoriya }}</div>
+    <div>Наличие отсрочки: {{ data.Prizivnik.otsrochka }}</div>
+    <div>Адрес: {{ data.Prizivnik.adress }}</div>
+{% endblock %}

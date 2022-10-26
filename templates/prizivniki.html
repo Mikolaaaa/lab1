@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Список призывников{% endblock %}
+
+{% block content %}
+<ul>
+    {% for Priziv in data.Prizivniki %}
+       {% include 'qw.html' with element=Priziv %}
+    {% empty %}
+        <li>Список пуст</li>
+    {% endfor %}
+</ul>
+{% endblock %}
